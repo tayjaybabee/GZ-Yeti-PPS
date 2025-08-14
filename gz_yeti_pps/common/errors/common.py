@@ -1,17 +1,9 @@
-"""
+from inspyre_toolbox.exceptional import CustomRootException
 
 
-Author: 
-    Inspyre Softworks
+class GZYetiPPSError(CustomRootException):
+    """
+    Base class for all GZYetiPPS errors.
+    """
+    default_message = "An error occurred in GZYetiPPS."
 
-Project:
-    GZ-Yeti-PPS
-
-File: 
-    gz_yeti_pps/common/errors/common.py
- 
-
-Description:
-    
-
-"""

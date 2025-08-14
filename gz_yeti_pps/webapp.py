@@ -1,17 +1,9 @@
-"""
+import streamlit as st
 
 
-Author: 
-    Inspyre Softworks
+st.title('Yeti tester')
 
-Project:
-    GZ-Yeti-PPS
 
-File: 
-    gz_yeti_pps/webapp.py
- 
+st.text('IP Address:')
+st.text('',)
 
-Description:
-    
-
-"""

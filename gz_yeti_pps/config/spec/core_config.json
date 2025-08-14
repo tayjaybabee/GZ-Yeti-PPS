@@ -1,0 +1,18 @@
+{
+
+  "meta": {
+    "config_version": 1,
+    "config_system": "core"
+  },
+
+  "spec": {
+    "device_host": {
+      "type": "string",
+      "default": "yeti.local",
+      "description": "The host name of the device",
+      "required": true,
+      "allowed_values": null,
+      "case_sensitive": false
+    }
+  }
+}

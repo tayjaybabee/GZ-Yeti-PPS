@@ -1,17 +1,22 @@
-"""
+from gz_yeti_pps.common.errors import GZYetiPPSError
 
 
-Author: 
-    Inspyre Softworks
+class GZYetiPPSConnectionError(GZYetiPPSError):
+    """
+    Raised when there is an error connecting to the YetiPPS server.
+    """
+    default_message = "Unable to connect to YetiPPS device."
 
-Project:
-    GZ-Yeti-PPS
+    def __init__(self, host: str = None, specific_error: str = None):
+        if host is not None and isinstance(host, str):
+            self.additional_message = f"Unable to connect to YetiPPS device at {host}."
 
-File: 
-    gz_yeti_pps/common/errors/connection.py
- 
+        if specific_error is not None and isinstance(specific_error, str):
+            self.additional_message += f'\n{specific_error}'
 
-Description:
-    
+        super().__init__()
 
-"""
+
+__all__ = [
+    'GZYetiPPSConnectionError'
+]

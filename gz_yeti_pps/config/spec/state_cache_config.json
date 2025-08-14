@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "config_version": 1,
+    "config_system": "state_cache"
+  },
+  "spec": {
+    "ttl": {
+      "type": "integer",
+      "default": 5,
+      "description": "The number of seconds to cache state data for",
+      "required": true,
+      "allowed_values": null
+    },
+    "max_size": {
+      "type": "integer",
+      "default": 100,
+      "description": "The maximum number of items to cache in the state cache",
+      "required": true
+    }
+  }
+}

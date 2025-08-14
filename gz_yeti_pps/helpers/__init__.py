@@ -1,6 +1,6 @@
 import requests
 from typing import Union
-from .common.constants import TRUE_VALUES, FALSE_VALUES, DEFAULT_API_STUB as DEFAULT_STUB
+from ..common.constants import TRUE_VALUES, FALSE_VALUES, DEFAULT_API_STUB as DEFAULT_STUB
 
 
 def parse_truthy_value(value: Union[bool, int, str]) -> Union[0, 1]:

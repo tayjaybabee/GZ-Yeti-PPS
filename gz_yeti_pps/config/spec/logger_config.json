@@ -1,0 +1,37 @@
+{
+  "meta": {
+    "config_version": 1,
+    "config_system": "logger"
+  },
+  "spec": {
+    "log_level": {
+      "type": "string",
+      "default": "info",
+      "description": "The level at which to output log messages",
+      "required": false,
+      "allowed_values": [
+        "DEBUG",
+        "INFO",
+        "WARN",
+        "ERROR"
+      ],
+      "case_sensitive": false
+    },
+    "enable_file_logging": {
+      "type": "bool",
+      "default": false,
+      "description": "Whether to enable file logging",
+      "required": false,
+      "allowed_values": null,
+      "case_sensitive": false
+    },
+    "log_directory": {
+      "type": "path",
+      "default": "APP_DIR/logs",
+      "description": "The directory to store log files",
+      "required": false,
+      "allowed_values": null,
+      "case_sensitive": false
+    }
+  }
+}

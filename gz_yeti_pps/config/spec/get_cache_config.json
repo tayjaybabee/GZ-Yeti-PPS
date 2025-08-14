@@ -1,0 +1,23 @@
+{
+
+  "meta": {
+    "config_version": 1,
+    "config_system": "get_cache"
+  },
+
+  "spec": {
+    "ttl": {
+      "type": "integer",
+      "default": 5,
+      "description": "The time to live in seconds for cache entries",
+      "required": true,
+      "allowed_values": null
+    },
+    "max_size": {
+      "type": "integer",
+      "default": 100,
+      "description": "The maximum number of items to cache",
+      "required": true
+    }
+  }
+}

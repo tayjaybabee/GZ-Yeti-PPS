@@ -1,16 +1,30 @@
 [project]
 name = "gz-yeti-pps"
-version = "0.1.0"
+version = "1.0.0-dev.1"
 description = ""
 authors = [
     {name = "Taylor B.",email = "tayjaybabee@gmail.com"}
 ]
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = ">=3.12,<4.0"
 dependencies = [
+    "requests (>=2.32.3,<3.0.0)",
+    "inspy-logger (>=3.2.3,<4.0.0)",
+    "python-box (>=7.3.2,<8.0.0)",
+    "easy-exit-calls (>=1.0.0.dev1,<2.0.0)",
+    "cachetools (>=5.5.2,<6.0.0)",
+    "rich (<14.0.0)",
+    "streamlit (==1.47.1)",
+    "streamlit-autorefresh (>=1.0.1,<2.0.0)"
 ]
 
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.group.dev.dependencies]
+ipython = "^9.0.2"
+prompt-toolkit = "^3.0.50"
+ptipython = "^1.0.1"
+
